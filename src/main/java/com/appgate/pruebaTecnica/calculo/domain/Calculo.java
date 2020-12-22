@@ -1,24 +1,22 @@
 package com.appgate.pruebaTecnica.calculo.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Builder
 @Data
-@EqualsAndHashCode
 @Entity
 @AllArgsConstructor
+@NoArgsConstructor
 public final class Calculo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Convert(converter = ListDoubleConverte.class)
-    private List<Double> operandos;
+    private List<Double> operandos = new ArrayList<>();
     private String operacion;
     private Double resultado;
 
