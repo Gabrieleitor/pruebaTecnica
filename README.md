@@ -51,3 +51,13 @@ los siguientes nombres son los permitidos para realizar las operaciones
  multiplicacion
  potenciacion
 ```
+
+### Pipeline
+
+esta configurado para jenkins y con heroku
+
+
+![alt text](https://github.com/Gabrieleitor/pruebaTecnica/blob/master/img/Captura.PNG)
+
+
+
