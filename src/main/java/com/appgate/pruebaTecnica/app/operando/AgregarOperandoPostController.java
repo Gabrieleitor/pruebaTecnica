@@ -19,7 +19,7 @@ public final class AgregarOperandoPostController {
     }
 
     @PostMapping
-    public ResponseEntity<String> index(@RequestBody Request request) {
+    public ResponseEntity<String> index(@RequestBody Digito request) {
         try {
             registrarOperando.agregarOperando(request.getCalculoId(), request.getOperando());
             return new ResponseEntity<>("OK", HttpStatus.OK);
@@ -32,7 +32,7 @@ public final class AgregarOperandoPostController {
     }
 
     @Data
-    static final class Request {
+    static final class Digito {
         private Integer calculoId;
         private Double operando;
     }

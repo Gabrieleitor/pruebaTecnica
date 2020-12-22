@@ -16,7 +16,7 @@ public class CrearCalculo {
 
     public Integer crear() {
         Calculo calculo = new Calculo();
-        repository.save(calculo);
+        calculo= repository.save(calculo);
         return calculo.getId();
     }
 }

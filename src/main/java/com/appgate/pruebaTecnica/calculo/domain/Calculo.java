@@ -3,6 +3,7 @@ package com.appgate.pruebaTecnica.calculo.domain;
 import lombok.*;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,7 +19,7 @@ public final class Calculo {
     @Convert(converter = ListDoubleConverte.class)
     private List<Double> operandos = new ArrayList<>();
     private String operacion;
-    private Double resultado;
+    private BigDecimal resultado;
 
 
 }
