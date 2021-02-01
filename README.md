@@ -34,7 +34,7 @@ docker run --name prueba-tecnica -p 8080:8080 prueba-tecnica:latest
 
 ### Documentación con Swagger 
 
-por medio de la siguente ruta podemos haceder a los metos para elaborar las consultas
+por medio de la siguente ruta podemos acceder a los metos para elaborar las consultas
 
 ```
 http://localhost:8080/swagger-ui.html
